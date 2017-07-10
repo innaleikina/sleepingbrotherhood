@@ -1,0 +1,98 @@
+html {
+  font-size:16px
+}
+
+body {
+  font-family: helvetica;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+.container{
+  /*max-width: 960px;*/
+  margin: 0 auto;
+  display:flex;
+  /*border:1px red solid;*/
+  width:100%;
+}
+
+/*Header*/
+
+header {
+  background-image: url("../images/studio-stock.jpg");
+  width:100%;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 20rem;
+  background-repeat: no-repeat;
+  /*border:1px red solid;*/
+}
+
+.navlogo{
+  flex-direction: column;
+}
+
+
+.brotherhood {
+  font-size: 2.5rem;
+  color:rgb(249, 171, 2);
+  /*border:1px red solid;*/
+  letter-spacing:.22rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-bottom: 2.5rem;
+  padding-top:2.3rem;
+  margin-top:5rem;
+
+}
+
+
+
+ .container .brotherhood{
+  text-align: center;
+  /*border:1px red solid;*/
+  width:960px;
+  }
+
+  .header .name  {
+    justify-content: center;
+    /*border:1px red solid;*/
+    }
+
+/*Nav*/
+
+nav {
+  flex-direction: row;
+  display:flex;
+  /*border:1px red solid;*/
+  width:100%;
+  justify-content: flex-end;
+  margin-bottom:1rem;;
+  margin-top:1rem;
+  background-color:black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position:fixed;
+  top:0;
+
+
+}
+
+nav ul {
+  flex-direction: row;
+  /*border:1px red solid;*/
+  display: flex;
+}
+
+nav ul li {
+  flex-direction: row;
+  /*border:1px red solid;*/
+  margin-right:15px;
+  font-size: .9rem;
+  padding: 0 .3rem;
+  letter-spacing: .04rem;
+}
+
+ul li a {
+  color:white;
+}
