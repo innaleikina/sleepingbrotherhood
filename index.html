@@ -1,72 +1,68 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <title>Sleeping Brotherhood Studio</title>
+
+    <!--_______________________ FONTS ______________________-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand:300,400,500,700" rel="stylesheet">
+
+    <!--_________________________STYLES_______________________-->
     <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width">
+
+    <!--________________________SCRIPTS______________________-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
   </head>
   <body>
 
-    <!--Header and Nav -->
-    <header class="header">
-        <div class ="navlogo container">
-          <div class="navigation container">
-            <nav>
-              <div class="nav-logo container">
-                <span class="logo"> Sleeping Brotherhood Studio </span>
-              </div>
-              <ul>
-               <li class="main-nav"> <a  href="#" style="text-decoration:none"> Home </a> </li>
-               <li class="main-nav"> <a href="#" style="text-decoration:none"> Gallery </a> </li>
-               <li class="main-nav"> <a href="#" style="text-decoration:none">  Equipment </a> </li>
-               <li class="main-nav">  <a href="#" style="text-decoration:none">  Projects </a> </li>
-               <li class="main-nav">  <a href="#" style="text-decoration:none"> Location</a> </li>
-             </ul>
-            </nav>
-          </div>
-        <div class="name container">
-          <span class="brotherhood"> Sleeping Brootherhood Studio </span>
-        </div>
+    <!--__________________________ Nav___________________________ -->
+
+      <div class="nav-logo">
+        <span class="navbar-brand"> Sleeping Brotherhood Studio </span>
       </div>
-  </header>
+    <nav class= " navbar-light">
+      <ul class="nav navbar-nav container-fluid navbar-right">
+       <li class="nav-link"> <a  href="#"> Home </a> </li>
+       <li class="nav-link"> <a href="#"> Services </a> </li>
+       <li class="nav-link"> <a href="#">  Equipment </a> </li>
+       <li class="nav-link">  <a href="#"> Contact</a> </li>
+     </ul>
+   </nav>
 
-  <!-- Story -->
-  <div class="story container">
+  <!--_____________________Mobile Menu_______________________________-->
 
-    <div class="story-text container">
-      <div class="story-heading container">
-        <h1> History of Our Name </h1>
-      </div>
-      <div class="story-p container">
-        <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend
-      urna at dolor interdum, vitae vulputate nisi tristique. In hac habitasse platea
-      dictumst. Praesent non accumsan dui. Etiam vestibulum eros sit amet magna interdum
-      ultrices. Nullam in pulvinar nibh. Vestibulum tellus ex, tristique in tincidunt at,
-      tristique eu erat. Cras arcu dui, venenatis vel interdum vel, egestas interdum turpis.
-      Etiam sed enim tempor, varius libero faucibus, lacinia ligula.
-
-      In hac habitasse platea dictumst. Aliquam sagittis ullamcorper felis vitae venenatis.
-      Nulla iaculis malesuada nulla eget faucibus. Fusce bibendum velit nec libero ultrices,
-      vel commodo libero posuere. Proin lectus ex, commodo eget finibus vitae, sagittis vel
-      odio. Vestibulum aliquam urna a nunc bibendum egestas. Proin lacinia mattis quam vel
-      finibus. </span>
-    </div>
+  <div class="dropdown">
+    <button class="btn pull-right btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown"> Menu
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a r href="#">Home</a></li>
+      <li role="presentation"><a  href="#">Services</a></li>
+      <li role="presentation"><a  href="#">Equipment</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a  href="#">Contact</a></li>
+    </ul>
   </div>
 
-    <div class="story-images container">
-      <div class="story-img container">
-       <img src="./resources/images/car-porters.jpg"/>
-      </div>
-      <div class="story-img container">
-       <img id="brotherhood" src="./resources/images/brotherhood.jpg"/>
-      </div>
-    </div>
+
+<script>
+$(document).ready(function(){
+  $("a.dropdown-toggle").click(function(ev) {
+            $("a.dropdown-toggle").dropdown("toggle");
+            return false;
+        });
+        $("ul.dropdown-menu a").click(function(ev) {
+            $("a.dropdown-toggle").dropdown("toggle");
+            return false;
+});
+</script>
 
 
-
-
-  </body>
+</body>
 </html>
