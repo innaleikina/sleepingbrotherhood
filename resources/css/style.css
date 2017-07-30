@@ -60,8 +60,10 @@ nav{
 .dropdown{
   display:flex;
   justify-content: space-between;
-  margin-right: .1rem;
+  padding-right: .1rem;
   margin-top: .02rem;
+  background-color: white;
+  padding-bottom: 1.5rem;
   /*border:1px red solid;*/
 }
 
@@ -81,7 +83,7 @@ display:none;
 /*---------------------------------JUMBOTRON ------------------*/
 
 .carousel {
-  margin-top:5rem;
+  margin-top:2rem;
 }
 
 .create {
@@ -105,7 +107,9 @@ display:none;
 
 .create-text{
 font-family: "lobster";
-font-size: 3rem;
+font-size: 6rem;
 color:white;
 opacity:0.8;
+text-align: center;
+padding-top: 10rem;
 }
