@@ -8,3 +8,10 @@ $(document).ready(function(){
             $("a.dropdown-toggle").dropdown("toggle");
             return false;
 });
+
+
+  $(document).ready(function(){
+    $('.carousel').slick({
+
+    });
+  });
