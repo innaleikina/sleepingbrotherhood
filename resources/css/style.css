@@ -1,5 +1,5 @@
 html {
-  font-size:14rem;
+  font-size:14px;
 }
 
 p {
@@ -8,7 +8,7 @@ p {
 
 h2 {
   font-family:"lobster";
-  color:
+  color:;
 }
 
 
@@ -17,10 +17,24 @@ h2 {
 .navbar-brand {
   font-family: "lobster";
   color: rgb(63, 116, 191);
+  position: fixed;
+  background-color: white;
+}
+
+.logo {
+  font-family: "lobster";
+  color: rgb(63, 116, 191);
+  font-size: 1.2rem;
+  display:none;
 }
 
 .dropdown {
   display:none;
+}
+
+.navbar-right {
+  justify-content: flex-end;
+  display:flex;
 }
 
 .btn {
@@ -29,17 +43,69 @@ h2 {
   border:none;
   }
 
+  .nav-logo{
+  z-index:2;
+  position: fixed;
+  }
 
+  .navbar-light{
+    position: absolute;
+  }
 
 @media only screen and (max-width: 768px){
 nav{
   display:none;
   }
 
-  .dropdown{
-    display:flex;
-    justify-content: flex-end;
-    margin-right: .1rem;
-    margin-top: .02rem;
+.dropdown{
+  display:flex;
+  justify-content: space-between;
+  margin-right: .1rem;
+  margin-top: .02rem;
+  /*border:1px red solid;*/
 }
+
+.navbar-brand{
+display:none;
+}
+
+.logo {
+ display:flex;
+ margin-left: .5rem;
+ margin-top:.4rem;
+ /*border:1px red solid;*/
+}
+}
+
+
+/*---------------------------------JUMBOTRON ------------------*/
+
+.carousel {
+  margin-top:5rem;
+}
+
+.create {
+  height:35rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.studio-images-fisrt{
+  background-image: url("../images/studio-stock-2.jpg");
+  }
+
+.studio-images-second{
+  background-image: url("../images/studio-stock-3.jpg");
+}
+
+.studio-images-third{
+  background-image: url("../images/studio-stock.jpg");
+}
+
+.create-text{
+font-family: "lobster";
+font-size: 7rem;
+color:white;
+opacity:0.8;
 }

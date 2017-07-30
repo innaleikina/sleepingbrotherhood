@@ -18,6 +18,7 @@
     <!--________________________SCRIPTS______________________-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
 
   </head>
@@ -26,10 +27,10 @@
     <!--__________________________ Nav___________________________ -->
 
       <div class="nav-logo">
-        <span class="navbar-brand"> Sleeping Brotherhood Studio </span>
+        <span class="navbar-brand navbar-fixed-top"> Sleeping Brotherhood Studio </span>
       </div>
-    <nav class= " navbar-light">
-      <ul class="nav navbar-nav container-fluid navbar-right">
+    <nav class= " navbar-light navbar-fixed-top ">
+      <ul class="nav navbar-nav container-fluid navbar-fixed-top navbar-right ">
        <li class="nav-link"> <a  href="#"> Home </a> </li>
        <li class="nav-link"> <a href="#"> Services </a> </li>
        <li class="nav-link"> <a href="#">  Equipment </a> </li>
@@ -40,6 +41,7 @@
   <!--_____________________Mobile Menu_______________________________-->
 
   <div class="dropdown">
+    <span class="logo"> Sleeping Brotherhood Studio </span> <!-- Extra logo, first one inerecepts the mobile menu -->
     <button class="btn pull-right btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown"> <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
     <span class="caret"></span></button>
     <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1">
@@ -52,8 +54,17 @@
   </div>
 
   <!--_______________________ Jumbotron _______________________-->
-
-
+ <div class="carousel">
+    <div class="container-fluid create studio-images-fisrt">
+      <p class="create-text"> "Create with us!" </p>
+    </div>
+    <div class="container-fluid create studio-images-second">
+      <p class="create-text"> "Create with us!" </p>
+    </div>
+    <div class="container-fluid create studio-images-third">
+      <p class="create-text"> "Create with us!" </p>
+    </div>
+</div>
 
 
 
@@ -68,6 +79,21 @@ $(document).ready(function(){
             return false;
 });
 </script>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.carousel').slick({
+
+        });
+      });
+    </script>
 
 
 </body>
