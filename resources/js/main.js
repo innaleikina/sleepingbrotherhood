@@ -9,8 +9,6 @@ $(document).ready(function(){
             return false;
 });
 
-
-  $(document).ready(function(){
     $('.carousel').slick({
 
     });
