@@ -84,11 +84,11 @@ display:none;
   margin-top:5rem;
 }
 
-/*.create {
-  height:35rem;
+.create {
+  height:30rem;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: cover;
 }
 
 .studio-images-fisrt{
@@ -106,6 +106,6 @@ display:none;
 .create-text{
 font-family: "lobster";
 font-size: 3rem;
-color:blue;
+color:white;
 opacity:0.8;
 }
