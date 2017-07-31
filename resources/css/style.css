@@ -92,7 +92,7 @@ display:none;
 .carousel-indicators li { visibility: hidden; }
 
 .image-container {
-  height:31rem;
+  height:33rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,7 +172,7 @@ padding-bottom: 10rem;
 
 @media only screen and (max-width: 480px){
   .about-all{
-    width:99%;
+    width:100%;
   }
 
   .quotes {
@@ -207,6 +207,10 @@ padding-bottom: 10rem;
   /*border:1px red solid;*/
 }
 
+.button-mid-page:hover {
+  opacity: 1;
+}
+
 .services {
 background-image: url("../images/services.jpg");
 }
@@ -222,8 +226,11 @@ background-image: url("../images/streetview.jpg");
 .button-mid-page-text{
   text-align: center;
   /*border: 1px red solid;*/
-  font-size: 1.5rem;
+  font-size: 3rem;
   opacity: 1 !important;
   font-family: "lobster";
   margin: 0;
+  color:white;
+  padding-top:6rem;
+
 }
