@@ -9,7 +9,10 @@ $(document).ready(function(){
             return false;
 });
 
-    $('.carousel').carousel()
+    $('.carousel').carousel({
+
+});
+
     $("#caurousel-java").carousel();
 
 // Enable Carousel Indicators
@@ -18,5 +21,3 @@ $(".item").click(function(){
 });
 
 // Enable Carousel Controls
-
-  });
