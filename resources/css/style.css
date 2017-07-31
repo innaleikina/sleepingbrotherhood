@@ -1,7 +1,8 @@
 html {
   font-size:14px;
   font-family: "Quicksand";
-  overflow-x: hidden;
+  margin:0;
+
 }
 
 p {
@@ -13,8 +14,25 @@ h2 {
   color:;
 }
 
+body{
+overflow-x: hidden;
+}
 
+.alt-grid [class*="col-"] {
+  padding-left:0;padding-right:0
+}
 
+.alt-grid .row {
+  margin-left:0;
+  margin-right:0
+}
+
+/* container adjusted */
+.alt-grid .container .container-fluid {
+  width:100%;
+  max-width:none;
+  padding:0;
+}
 
 
 /*--------------------------------NAVIGATION----------------------*/
@@ -234,3 +252,7 @@ background-image: url("../images/streetview.jpg");
   padding-top:6rem;
 
 }
+
+/**{background: #000 !important;
+color: #0f0 !important;
+outline: solid #f00 1px !important;}
