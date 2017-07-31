@@ -105,11 +105,11 @@ display:none;
   background-image: url("../images/studio-stock.jpg");
 }
 
-.create-text{
+.carousel-caption{
 font-family: "lobster";
 font-size: 6rem;
 color:white;
 opacity:0.8;
 text-align: center;
-padding-top: 10rem;
+padding-bottom: 10rem;
 }

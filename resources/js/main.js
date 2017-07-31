@@ -9,7 +9,8 @@ $(document).ready(function(){
             return false;
 });
 
-    $('.carousel').carousel()$("#caurousel-java").carousel();
+    $('.carousel').carousel()
+    $("#caurousel-java").carousel();
 
 // Enable Carousel Indicators
 $(".item").click(function(){
