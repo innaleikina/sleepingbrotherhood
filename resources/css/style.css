@@ -1,5 +1,7 @@
 html {
   font-size:14px;
+  font-family: "Quicksand";
+  overflow-x: hidden;
 }
 
 p {
@@ -10,6 +12,8 @@ h2 {
   font-family:"lobster";
   color:;
 }
+
+
 
 
 
@@ -85,16 +89,19 @@ display:none;
 .slide {
   margin-top:2rem;
 }
+.carousel-indicators li { visibility: hidden; }
 
 .image-container {
   height:31rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .studio-images-fisrt{
   background-image: url("../images/studio-stock-2.jpg");
+
   }
 
 .studio-images-second{
@@ -112,4 +119,68 @@ color:white;
 opacity:0.8;
 text-align: center;
 padding-bottom: 10rem;
+}
+
+@media only screen and (max-width: 1024px){
+  .carousel-caption{
+    /*padding-bottom: 8rem;*/
+    line-height: 5rem;
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .carousel-caption{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+/*-------------------------------QUOTES------------------------*/
+.about-all{
+ width: 70%;
+ border:2px black solid ;
+ padding:0rem 2rem;
+ margin-top: 4rem;
+}
+
+.quotes {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "baskerville ";
+  margin: 0;
+  /*border:1px red solid*/
+}
+
+.logo-font{
+  font-family: "lobster";
+  color:rgb(63, 116, 191);
+}
+
+.about {
+  font-size: 1.4rem;
+  font-family: "baskerville";
+  line-height: 3rem;
+  letter-spacing:.2rem;
+  text-align: center;
+}
+
+.quote-closing{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/*_____________________________BUTTONS _____________________*/
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+  background: white;
+  z-index:5;
+}
+
+.services p {
+  margin-right: 13rem;
 }
