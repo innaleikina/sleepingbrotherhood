@@ -97,6 +97,7 @@ display:none;
  display:flex;
  margin-left: .5rem;
  margin-top:.4rem;
+ font-size: 1.3rem;
  /*border:1px red solid;*/
 }
 }
@@ -190,7 +191,7 @@ padding-bottom: 10rem;
 
 @media only screen and (max-width: 480px){
   .about-all{
-    width:100%;
+    width:95%;
   }
 
   .quotes {
@@ -211,6 +212,7 @@ padding-bottom: 10rem;
   /*border:1px red solid;*/
   background-color:rgba(172,215,230,0.2);
   padding: 2rem 0rem;
+
 }
 
 
@@ -221,20 +223,42 @@ padding-bottom: 10rem;
   background-size: cover;
   opacity: .7;
   margin-top: .5rem;
-   border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: width 300ms; /* Safari */
+  transition: background-color 300ms;
+
   /*border:1px red solid;*/
+}
+
+@media only screen and (max-width:768px){
+  .button-mid-page{
+    margin-bottom: 1.3rem;
+  }
+
+  .button-mid-page {
+    opacity:1;
+  }
 }
 
 .button-mid-page:hover {
   opacity: 1;
 }
 
+.button-mid-page:active{
+  background-color: black;
+  background-image: none;
+}
+
 .services {
 background-image: url("../images/services.jpg");
+margin-right: 2rem;
 }
+
+
 
 .equipment{
 background-image: url("../images/equipment.jpg");
+margin-right: 2rem;
 }
 
 .contact{
@@ -250,8 +274,9 @@ background-image: url("../images/streetview.jpg");
   margin: 0;
   color:white;
   padding-top:6rem;
-
 }
+
+
 
 /**{background: #000 !important;
 color: #0f0 !important;
