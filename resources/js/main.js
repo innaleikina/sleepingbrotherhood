@@ -9,7 +9,13 @@ $(document).ready(function(){
             return false;
 });
 
-    $('.carousel').slick({
+    $('.carousel').carousel()$("#caurousel-java").carousel();
 
-    });
+// Enable Carousel Indicators
+$(".item").click(function(){
+    $("#caurousel-java").carousel(1);
+});
+
+// Enable Carousel Controls
+
   });

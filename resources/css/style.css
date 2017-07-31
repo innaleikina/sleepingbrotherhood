@@ -82,11 +82,11 @@ display:none;
 
 /*---------------------------------JUMBOTRON ------------------*/
 
-.carousel-style {
+.slide {
   margin-top:2rem;
 }
 
-.create {
+.image-container {
   height:31rem;
   background-position: center;
   background-repeat: no-repeat;
