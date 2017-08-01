@@ -212,7 +212,11 @@ padding-bottom: 10rem;
   /*border:1px red solid;*/
   background-color:rgba(172,215,230,0.2);
   padding: 2rem 0rem;
+  transition: background-color 1s;
+}
 
+.buttons:hover {
+  background-color:rgba(172,215,230,1);
 }
 
 
@@ -233,6 +237,8 @@ padding-bottom: 10rem;
 @media only screen and (max-width:768px){
   .button-mid-page{
     margin-bottom: 1.3rem;
+    width:14rem;
+    height:14rem;
   }
 
   .button-mid-page {
@@ -269,15 +275,101 @@ background-image: url("../images/streetview.jpg");
   text-align: center;
   /*border: 1px red solid;*/
   font-size: 3rem;
-  opacity: 1 !important;
   font-family: "lobster";
   margin: 0;
   color:white;
   padding-top:6rem;
 }
 
+@media only screen and (max-width:768px){
+  .button-mid-page-text{
+    padding-top: 4rem;
+  }
+}
 
+/*-----------------------------TEXT ------------------------*/
+.paragraph{
+  width: 23rem;
+  display: flex;
+  margin: 5rem 0;
+  /*border:1px red solid;*/
+  font-family: "baskerville";
+}
 
+.paragraph p{
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  letter-spacing: .1rem;
+}
+
+.text-container {
+  /*border:1px red solid;*/
+  display:flex;
+  justify-content: center;
+}
+
+.paragraph-left {
+margin-right: 5rem;
+display:flex;
+flex-direction: column;
+}
+
+.paragraph-right {
+display:flex;
+flex-direction: column;
+}
+
+.header-text{
+  color: rgb(63, 116, 191);
+  text-align: center;
+}
+
+.mobile-text{
+  display:none;
+}
+@media only screen and (max-width:768px){
+  .paragraph{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .mobile-text{
+    display: flex;
+  }
+
+  .desktop-text{
+    display: none;
+  }
+}
+
+/* -------------------------------FOOTER-------------------*/
+.footer{
+  background-color: rgba(172,215,230,0.2);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  transition: background-color .8s;
+}
+
+.footer:hover {
+background-color:rgba(172,215,230,1);
+}
+
+.footer-text{
+  font-family: "lobster";
+  font-size: 3rem;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon{
+  margin-right: 1rem;
+}
 /**{background: #000 !important;
 color: #0f0 !important;
 outline: solid #f00 1px !important;}
