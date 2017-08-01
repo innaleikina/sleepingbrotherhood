@@ -89,6 +89,11 @@ nav{
   /*border:1px red solid;*/
 }
 
+.dropdown li{
+  padding: .5rem;
+
+}
+
 .navbar-brand{
 display:none;
 }
@@ -101,7 +106,7 @@ display:none;
  /*border:1px red solid;*/
 }
 }
-
+/*--------------------------------SERVUCES---------------------*/
 
 /* -------------------------------FOOTER-------------------*/
 .footer{
