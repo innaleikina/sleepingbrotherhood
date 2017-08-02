@@ -2,7 +2,10 @@ html {
   font-size:14px;
   font-family: "Quicksand";
   margin:0;
+}
 
+html,body {
+  overflow-x: hidden;
 }
 
 p {
