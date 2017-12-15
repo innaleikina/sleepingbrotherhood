@@ -128,7 +128,7 @@ display:none;
 .map-small{
   display: none;
 }
-@media only screen and (max-width:760px)
+
 
 @media only screen and (max-width:480px){
   .map{
@@ -193,3 +193,7 @@ background-color:rgba(172,215,230,1);
 .social-icon{
   margin-right: 1rem;
 }
+
+/**{background: #000 !important;
+color: #0f0 !important;
+outline: solid #f00 1px !important;}*/
