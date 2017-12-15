@@ -1,5 +1,5 @@
 html {
-  font-size:14px;
+  font-size:16px;
   font-family: "Quicksand";
   margin:0;
 
@@ -126,9 +126,12 @@ display:none;
 }
 
 .services-heading {
-  font-family: "lobster";
+  font-family: "baskerville";
   font-size: 1.2rem;
   color: rgb(63, 116, 191);
+  font-weight: bold;
+  letter-spacing: .2rem;
+
   text-align: center;
   /*background-color: rgba(172,215,230,.4);*/
   padding:.5rem 0;
@@ -141,9 +144,13 @@ display:none;
 
 .services-text{
   font-family: "baskerville";
-  width: 18.5rem;
+  width: 25.5rem;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  letter-spacing: .1rem;
+  /*border:1px red solid;*/
 }
 
 
